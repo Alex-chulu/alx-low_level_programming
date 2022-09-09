@@ -1,1 +1,1 @@
-a C program that prints aoutput
+C program that prints out a peice of art

@@ -6,13 +6,15 @@
  */
 int main(void)
 {
-int y;
-for (y = 0; y < 10; y++)
+int i;
+
+for (i = 0; i < 10; i++)
+
 {
-printf("%y", y);
+printf("%i", i);
 }
 
-printf('\n');
+printf("\n");
 
 return (0);
 }

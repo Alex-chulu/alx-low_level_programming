@@ -20,11 +20,14 @@ void times_table(void)
 			if (produc <= 9)
 			{
 				_putchar(' ');
+			}
 			else
+			{
 				_putchar((produc / 10) + '0');
+			}
 
 			_putchar((produc % 10) + '0');
-			}
+
 		}
 		_putchar('\n');
 	}

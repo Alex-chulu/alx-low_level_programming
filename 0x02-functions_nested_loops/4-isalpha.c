@@ -5,7 +5,7 @@
  * @c: int  used as function argument
  * Return: 0 for success
  */
-int _isalpha(int c)
+int  _isalpha(int c)
 {
 
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));

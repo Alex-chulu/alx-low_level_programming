@@ -28,7 +28,7 @@ int main(void)
 			printf("%s", fizz);
 		}
 
-		else if (y  % 5 == 5)
+		else if (y  % 5 == 0)
 		{
 			printf("%s", buzz);
 		}

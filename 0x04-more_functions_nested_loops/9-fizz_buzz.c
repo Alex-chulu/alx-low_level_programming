@@ -25,7 +25,7 @@ int main(void)
 			printf("FizzBuzz");
 		}
 
-		else if (i == 1)
+		else if (y == 1)
 		{
 			printf("%d", y);
 		}

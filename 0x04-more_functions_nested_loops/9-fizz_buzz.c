@@ -17,29 +17,23 @@ int main(void)
 		{
 			printf("%s", buzz);
 		}
-
 		else if ((y % 3 == 0) && (y % 5 == 0))
 		{
 			printf("%s", fizzbuzz);
 		}
-
 		else if (y % 3 == 0)
 		{
 			printf("%s", fizz);
 		}
-
 		else if (y  % 5 == 0)
 		{
 			printf("%s", buzz);
 		}
-
 		else
 		{
 			printf("%d", y);
 		}
 	}
-
 	printf("\n");
-
 	return (0);
 }

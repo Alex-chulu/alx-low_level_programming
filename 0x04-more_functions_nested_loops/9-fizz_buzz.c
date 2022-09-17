@@ -1,35 +1,41 @@
-#include "main.h"
-#include <stdlib.h>
+#include <stdlb.h>
 #include <stdio.h>
+
 /**
-* main - prints the numbers from 1 to 100, followed by a new line
-* Return: Always 0 for success
-*/
+ * main -  prints the numbers from 1 to 100
+ * Return: 0 (success)
+ */
+
 int main(void)
 {
+	int y;
+	char fi[] = "Fizz";
+	char bu[] = "Buzz";
+	char fbz[] = "FizzBuzz";
 
-int y;
-
-for (y = 1; y <= 100; y++)
-{
-if (y % 3 == 0 && y % 5 != 0)
-{
-printf("Fizz");
-}
-else if (y % 5 == 0 && y % 3 != 0)
-{
-printf("Buzz");
-}
-else if (y % 3 == 0 && y % 5 == 0)
-{
-printf("FizzBuzz");
-}
-else if (y == 1)
-{
-printf("%d", y);
-}
-else
-{
-printf("%d", y);
-}
+	for (y = 1; y <= 100; y++)
+	{
+		if (y == 100)
+		{
+			printf("%s", bu);
+		}
+		else if ((y % 3 == 0) && (y % 5 == 0))
+		{
+			printf("%s", fbz);
+		}
+		else if (y % 3 == 0)
+		{
+			printf("%s", fi);
+		}
+		else if (y % 5 == 0)
+		{
+			printf("%s", bu);
+		}
+		else
+		{
+			printf("%d", y);
+		}
+	}
+	printf("\n");
+	return (0);
 }

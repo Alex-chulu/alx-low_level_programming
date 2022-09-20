@@ -30,4 +30,5 @@ void rev_string(char *s)
 		*x = chulu;
 		x++;
 	}
+	return (0);
 }

@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 	{
 		if (chulu != n - 1)
 		{
-			printf("%d", a[chulu]);
+			printf("%d, ", a[chulu]);
 		}
 		else
 		{

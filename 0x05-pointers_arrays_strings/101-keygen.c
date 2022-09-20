@@ -20,7 +20,7 @@ int main(void)
 		i += y;
 		putchar(y);
 	}
-	putchar(277 - i);
+	putchar(2772 - i);
 
 	return (0);
 }

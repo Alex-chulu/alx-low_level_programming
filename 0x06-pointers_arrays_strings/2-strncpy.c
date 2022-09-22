@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strncpy - a function that copies a string
- * @dest: destination for storing the coppy
- * @src: string source
- * @n: number of size coppied
- * Return: 0
- */
+*_strncpy - a function that copies a string
+*@dest: destination for storing the coppy
+*@src: string source
+*@n: number of size
+*Return: 0
+*/
 
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -16,11 +16,9 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[x] = src[x];
 	}
-
 	for ( ; x < n; x++)
 	{
 		dest[x] = '\0';
 	}
-
-	return (dest)
+	return (0);
 }

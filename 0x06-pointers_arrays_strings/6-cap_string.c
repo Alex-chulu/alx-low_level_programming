@@ -18,7 +18,7 @@ char *cap_string(char *str)
 	{
 		y = 0;
 
-		while (y <= space)
+		while (y < alx)
 		{
 			if ((x == 0 || str[x - 1] == space[y] &&
 			str[x] >= 97 && str[x] <= 122))

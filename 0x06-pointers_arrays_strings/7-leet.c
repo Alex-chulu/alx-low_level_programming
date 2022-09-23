@@ -8,8 +8,7 @@
 
 char *leet(char *str)
 {
-	int alx = 0;
-	int chu;
+	int alx = 0, chu;
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	while (str[++alx])

@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 
-	int alx = 0;
+	int alx = O;
 
 	while (str[++alx])
 	{

@@ -9,32 +9,33 @@
 
 char *cap_string(char *str)
 {
-int alx = 0;
 
-while (str[++alx])
-{
+	int alx = 0;
 
-	while (!(str[alx] >= 'a' || str[alx] <= 'z'))
+	while (str[++alx])
 	{
-		alx++;
-	}
 
-	if (str[alx - 1] == ' ' ||
-		str[alx - 1] == '\t' ||
-		str[alx - 1] == '\n' ||
-		str[alx - 1] == ',' ||
-		str[alx - 1] == ';' ||
-		str[alx - 1] == '.' ||
-		str[alx - 1] == '!' ||
-		str[alx - 1] == '?' ||
-		str[alx - 1] == '"' ||
-		str[alx - 1] == '(' ||
-		str[alx - 1] == ')' ||
-		str[alx - 1] == '{' ||
-		str[alx - 1] == '}')
-	{
-	str[alx] -= 32;
-	}
+		while (!(str[alx] >= 'a' && str[alx] <= 'z'))
+		{
+			alx++;
+		}
+
+		if (str[alx - 1] == ' ' ||
+			str[alx - 1] == '\t' ||
+			str[alx - 1] == '\n' ||
+			str[alx - 1] == ',' ||
+			str[alx - 1] == ';' ||
+			str[alx - 1] == '.' ||
+			str[alx - 1] == '!' ||
+			str[alx - 1] == '?' ||
+			str[alx - 1] == '"' ||
+			str[alx - 1] == '(' ||
+			str[alx - 1] == ')' ||
+			str[alx - 1] == '{' ||
+			str[alx - 1] == '}')
+		{
+		str[alx] -= 32;
+		}
 }
 return (str);
 }

@@ -14,9 +14,8 @@ char *cap_string(char *str)
 	while (str[++alx])
 	{
 		while (!(str[alx] >= 'a' && str[alx] <= 'z'))
-		{
 			alx++;
-		}
+
 		if (str[alx - 1] == ' ' ||
 				str[alx - 1] == '\t' ||
 				str[alx - 1] == '\n' ||
@@ -30,9 +29,7 @@ char *cap_string(char *str)
 				str[alx - 1] == ')' ||
 				str[alx - 1] == '{' ||
 				str[alx - 1] == '}')
-		{
 			str[alx] -= 32;
-		}
 	}
 	return (str);
 }

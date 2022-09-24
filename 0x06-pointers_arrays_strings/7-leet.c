@@ -18,7 +18,7 @@ char *leet(char *str)
 
 		while (y < z)
 		{
-			if (str[x] == m[y] || str[x] - 32 == m[y])
+			if (str[x] == m[y] || str[x] - 42 == m[y])
 			{
 				str[x] = n[y];
 			}

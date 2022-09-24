@@ -13,10 +13,13 @@ int alx = 0;
 
 while (str[++alx])
 {
-	while (!(str[alx] >= 'a' && str[alx] <= 'z'))
-		alx++;
 
-		if (str[alx - 1] == ' ' ||
+	while (!(str[alx] >= 'a' && str[alx] <= 'z'))
+	{
+		alx++;
+	}
+
+	if (str[alx - 1] == ' ' ||
 		str[alx - 1] == '\t' ||
 		str[alx - 1] == '\n' ||
 		str[alx - 1] == ',' ||
@@ -29,7 +32,9 @@ while (str[++alx])
 		str[alx - 1] == ')' ||
 		str[alx - 1] == '{' ||
 		str[alx - 1] == '}')
+	{
 	str[alx] -= 32;
+	}
 }
 return (str);
 }

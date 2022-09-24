@@ -14,7 +14,7 @@ int alx = 0;
 while (str[++alx])
 {
 
-	while (!(str[alx] >= 'a' && str[alx] <= 'z'))
+	while ((str[alx] >= 'A' && str[alx] <= 'Z'))
 	{
 		alx++;
 	}

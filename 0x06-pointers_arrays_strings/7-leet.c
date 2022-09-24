@@ -8,19 +8,23 @@
 
 char *leet(char *str)
 {
-	int alx = 0, chu;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int x = 0, y = 0, z = 0;
+	char m[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (str[++alx])
+	while (str[x])
 	{
-		for (chu = 0; chu <= 7; chu++)
+		y = 0;
+
+		while (y < z)
 		{
-			if (str[alx] == leet[chu] ||
-			str[alx] - 32 == leet[chu])
+			if (str[x] == m[y] || str[x] - 32 == m[y])
 			{
-				str[alx] = chu + '0';
+				str[x] = n[y];
 			}
+			y++;
 		}
+		x++;
 	}
 	return (str);
 }

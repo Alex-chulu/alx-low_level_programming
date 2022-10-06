@@ -39,7 +39,7 @@ char *argstostr(int ac, char **av)
 			str[c] = av[a][b];
 			c++;
 		}
-		str[c] = '\0';
+		str[c] = '\n';
 		c++;
 	}
 	return (str);

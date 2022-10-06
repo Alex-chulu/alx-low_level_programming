@@ -2,7 +2,7 @@
 
 /**
  * _strlen - array count
- * @s: string 
+ * @s: string
  * Return: 1
  */
 
@@ -32,7 +32,7 @@ char *_strcpy(char *dest, char *src)
 
 	while (src[x] != '\0')
 	{
-		dest[x] src[x];
+		dest[x] = src[x];
 		x++;
 	}
 	dest[x] = '\0';
@@ -56,12 +56,12 @@ char *_strdup(char *str)
 	}
 
 	size = _strlen(str) + 1;
-	alex = (char *) malloc(sizeof(char));
+	alex = (char *) malloc(size * sizeof(char));
 
 	if (alex == 0)
 	{
 		return (NULL);
 	}
 	_strcpy(alex, str);
-	retun (alex);
+	return (alex);
 }

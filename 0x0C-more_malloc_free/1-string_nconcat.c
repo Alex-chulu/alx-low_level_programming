@@ -5,7 +5,7 @@
  * @s1: string 1
  * @s2: string 2
  * @n: index
- * Return: point
+ * Return: pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -30,15 +30,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n > size2)
-	{
-		n = size2;
-		alex = malloc((size1 + n + 1) * sizeof(char));
-	}
+	n = size2;
+	alex = malloc((size1 + n + 1) * sizeof(char));
 
 	if (alex == NULL)
-	{
 		return (0);
-	}
+
 	for (x = 0; x < size1; x++)
 	{
 		alex[x] = s1[x];

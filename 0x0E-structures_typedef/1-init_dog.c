@@ -7,14 +7,19 @@
  * @name: dog name
  * @owner: dog owner
  * @age: dog age
+ * Description: this struct is for the dog
  */
 
-void init_dog(struct dog *d, char *name, char *owner, float age)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d == NULL)
+	{
+		return;
+	}
+	else
 	{
 		d->name = name;
-		d->owner = owner;
 		d->age = age;
+		d->owner = owner;
 	}
 }

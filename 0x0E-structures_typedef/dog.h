@@ -6,6 +6,7 @@
  * @name: name to be used
  * @owner: owner to be used
  * @age: age to be used
+ * Description: struct for dog
  */
 
 struct dog
@@ -13,7 +14,7 @@ struct dog
 	char *name;
 	char *owner;
 	float age;
-}
+};
 
 typedef struct dog dog_x;
 void init_dog(struct dog *d, char *name, float age, char *owner);

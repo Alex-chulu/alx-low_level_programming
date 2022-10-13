@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes, x;
-	char alx;
+	char *alx;
 
 	if (argc != 2)
 	{

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) tortoise(void);
+void __attribute__((constructor)) hare(void);
 
 /**
- * tortoise - prints string before main executes
+ * hare - prints string before main executes
  */
 
-void tortoise(void)
+void hare(void)
 {
 	printf("You're beat! and yet, you must allow,
 			\nI bore my house upon my back!\n");

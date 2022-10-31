@@ -17,21 +17,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	dup = malloc(sizeof(char) * letters);
-	if (dup == NULL)
+	cp = malloc(sizeof(char) * letters);
+	if (cp == NULL)
 		return (0);
 
 	x = open(filename, O_RDONLY);
-	y = read(x, dup, letters);
-	z = write(STDOUT_FILENO, dup, y);
+	y = read(x, cp, letters);
+	z = write(STDOUT_FILENO, cp, y);
 
 	if (x == -1 || y == -1 || z == -1 || z != y)
 	{
-		free(dup);
+		free(cp);
 		return (0);
 	}
 
-	free(dup);
+	free(cp);
 	close(x);
 
 	return (z);

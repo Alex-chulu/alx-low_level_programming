@@ -8,22 +8,22 @@
 
 int main(void)
 {
-	long prim = 612852475143, dive;
+	long prime = 612852475143, dive;
 
-	while (dive < (prim / 2))
+	while (dive < (prime / 2))
 	{
-		if ((prim % 2) == 0)
+		if ((prime % 2) == 0)
 		{
-			prim /= 2;
+			prime /= 2;
 			continue;
 		}
 
-		for (dive = 3; dive < (prim / 2); dive += 2)
+		for (dive = 3; dive < (prime / 2); dive += 2)
 		{
-			if ((prim % dive) == 0)
-				prim /= dive;
+			if ((prime % dive) == 0)
+				prime /= dive;
 		}
 	}
-	printf("%1d\n", prim);
+	printf("%1d\n", prime);
 	return (0);
 }

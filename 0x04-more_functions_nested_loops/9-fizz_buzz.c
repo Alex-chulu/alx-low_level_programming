@@ -16,25 +16,15 @@ int main(void)
 	for (y = 1; y <= 100; y++)
 	{
 		if (y == 100)
-		{
 			printf("%s", bu);
-		}
 		else if ((y % 3 == 0) && (y % 5 == 0))
-		{
-			printf("%s", fbz);
-		}
+			printf("%s ", fbz);
 		else if (y % 3 == 0)
-		{
-			printf("%s", fi);
-		}
+			printf("%s ", fi);
 		else if (y % 5 == 0)
-		{
-			printf("%s", bu);
-		}
+			printf("%s ", bu);
 		else
-		{
-			printf("%d", y);
-		}
+			printf("%d ", y);
 	}
 	printf("\n");
 	return (0);

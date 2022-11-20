@@ -18,7 +18,7 @@ int main(void)
 			continue;
 		}
 
-		for (dive = 3; div < (prim / 2); dive += 2)
+		for (dive = 3; dive < (prim / 2); dive += 2)
 		{
 			if ((prim % dive) == 0)
 				prim /= dive;

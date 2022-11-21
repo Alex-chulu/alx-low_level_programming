@@ -8,7 +8,7 @@
  * @month: month
  * @year: year
  * @day: day in a month
- * Return: 0 (success)
+ * Return: void
  */
 
 void print_remaining_days(int month, int day, int year)

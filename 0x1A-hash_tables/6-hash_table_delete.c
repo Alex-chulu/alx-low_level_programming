@@ -4,18 +4,17 @@
  * hash_table_delete - Deletes a hash table.
  * @ht: Hash table.
  */
-
 void hash_table_delete(hash_table_t *ht)
 {
 	hash_table_t *head = ht;
 	hash_node_t *node, *tmp;
-	unsigned long int i;
+	unsigned long int x;
 
-	for (i = 0; i < ht->size; i++)
+	for (x = 0; x < ht->size; x++)
 	{
-		if (ht->array[i] != NULL)
+		if (ht->array[x] != NULL)
 		{
-			node = ht->array[i];
+			node = ht->array[x];
 			while (node != NULL)
 			{
 				tmp = node->next;

@@ -2,26 +2,27 @@
 
 /**
  * hash_table_print - Prints a hash table.
- * @ht:  The hash table.
+ * @ht: The hash table.
  *
- * Description: print the key/value in the order that
- * they appear in the array of hash table.
+ * Description: print the key/value in the
+ * order that they appear in the array of hash table
  */
+
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *node;
 	unsigned long int x;
-	unsigned char flag = 0;
+	unsigned char comma = 0;
 
 	if (ht == NULL)
 		return;
 
 	printf("{");
-	for (i = 0; i < ht->size; x++)
+	for (x = 0; x < ht->size; x++)
 	{
 		if (ht->array[x] != NULL)
 		{
-			if (flag == 1)
+			if (comma == 1)
 				printf(", ");
 
 			node = ht->array[x];
@@ -32,7 +33,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (node != NULL)
 					printf(", ");
 			}
-			flag = 1;
+			comma = 1;
 		}
 	}
 	printf("}\n");

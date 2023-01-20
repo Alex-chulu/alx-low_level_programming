@@ -1,14 +1,12 @@
-5-hash_table_print.c
 #include "hash_tables.h"
 
 /**
  * hash_table_print - Prints a hash table.
- * @ht: The hash table
+ * @ht: Hash table.
  *
- * Description: the key/value in the order that
+ * Description: print the key/value in the order that
  * they appear in the array of hash table.
  */
-
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *node;

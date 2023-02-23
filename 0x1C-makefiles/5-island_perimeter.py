@@ -13,9 +13,9 @@ def island_perimeter(grid):
     for x in range(height):
         for y in range(width):
             if grid[x][y] = land_zone:
-                size = size + 1
+                size +=  1
                 if (y > 0 and grid[x][y - 1] == land_zone):
-                    margin = margin + 1
+                    margin + = 1
                 if (x > 0 and grid[x - 1][y] == land_zone):
-                    margin = margin + 1
+                    margin += 1
     return size * 4 - margin * 2

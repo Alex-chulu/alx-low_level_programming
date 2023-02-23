@@ -1,0 +1,5 @@
+CC = gcc
+SRC = main.c schol.c
+NAME = school
+all: ${SRC}
+	${CC} ${SRC} ${NAME}

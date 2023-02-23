@@ -1,21 +1,31 @@
 #!/usr/bin/python3
-"""This module will calculate the perimeter of the island described in grid"""
+"""This is a module that calculates the perimeter of an island in a grid"""
+
+
+def surroundin_water(grid, x, y):
+    """Function that return the perimeter of island in a grid"""
+
+    surr_water = 0
+
+    if x <= 0 or not grid[x - 1][y]:
+        surr_water += 1
+    if y <= 0 or not grid[x][y - 1]:
+        surr_water += 1
+    if y >= len(grid[x]) - 1 or not grid[x][y + 1]:
+        surr_water += 1
+    if x >= len(grid) - 1 or not grid[x + 1][y]:
+        surr_water += 1
+
+    return surr_water
+
 
 def island_perimeter(grid):
-    """Function that return the perimeter of the island in grid """
+    """Function that returns the perimeter of the island in grid"""
 
-    land_zone = 1
-    width = len(grid[0])
-    height = len(grid)
-    margin = 0
-    size = 0
+    per = 0
+    for x in range(len(grid)):
+        for y in range(len(grid[x])):
+            if grid[x][y]:
+                per += surroundin_water(grid, x, y)
 
-    for x in range(height):
-        for y in range(width):
-            if grid[x][y] = land_zone:
-                size +=  1
-                if (y > 0 and grid[x][y - 1] == land_zone):
-                    margin + = 1
-                if (x > 0 and grid[x - 1][y] == land_zone):
-                    margin += 1
-    return size * 4 - margin * 2
+    return per

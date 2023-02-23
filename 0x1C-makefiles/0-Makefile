@@ -1,2 +1,2 @@
-.PHONY: all school
-all: school
+all: school.c
+	gcc school.c -o school

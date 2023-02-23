@@ -1,0 +1,4 @@
+all: school.c
+	cc =  gcc
+	SRC = .c
+	${cc} main.SRC school.SRC -o school
